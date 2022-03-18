@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/mystyle.css">
+    
+
+        
+        <title>Responsive sidebar submenus</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="header">
+            <div class="header__container">
+                <img src="assets/img/perfil.jpg" alt="" class="header__img">
+
+                <a href="index copy.html" class="header__logo">Bedimcode</a>
+    
+                <div class="header__search">
+                    <input type="search" placeholder="Search" class="header__input">
+                    <i class='bx bx-search header__icon'></i>
+                </div>
+    
+                <div class="header__toggle">
+                    <i class='bx bx-menu' id="header-toggle"></i>
+                </div>
+            </div>
+        </header>
+
+        <!--========== NAV ==========-->
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="mainindex.html" class="nav__link nav__logo">
+                        <i class='bx bxs-disc nav__icon' ></i>
+                        <span class="nav__logo-name">Bedimcode</span>
+                    </a>
+    
+                    <div class="nav__list">
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Profile</h3>
+    
+                            <a href="index.html" class="nav__link active">
+                                <i class='bx bx-home nav__icon' ></i>
+                                <span class="nav__name">Home</span>
+                            </a>
+                            
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-user nav__icon' ></i>
+                                    <span class="nav__name">Profile</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="index copy.html" class="nav__dropdown-item">Passwords</a>
+                                        <a href="userprofile.html" class="nav__dropdown-item">Mail</a>
+                                        <a href="userprofile2.html" class="nav__dropdown-item">Accounts</a>
+                                        <a href="edituser.html" class="nav__dropdown-item" >total edit</a>
+                                        <a href="adminusers.html" class="nav__dropdown-item" >total edit</a>
+                                        <a href="superuser.html" class="nav__dropdown-item" >total edit</a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a href="index copy 2.html" class="nav__link">
+                                <i class='bx bx-message-rounded nav__icon' ></i>
+                                <span class="nav__name">Messages</span>
+                            </a>
+                        </div>
+    
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Menu</h3>
+    
+                            <div class="nav__dropdown">
+                                <a href="#" class="nav__link">
+                                    <i class='bx bx-bell nav__icon' ></i>
+                                    <span class="nav__name">Notifications</span>
+                                    <i class='bx bx-chevron-down nav__icon nav__dropdown-icon'></i>
+                                </a>
+
+                                <div class="nav__dropdown-collapse">
+                                    <div class="nav__dropdown-content">
+                                        <a href="#" class="nav__dropdown-item">Blocked</a>
+                                        <a href="#" class="nav__dropdown-item">Silenced</a>
+                                        <a href="#" class="nav__dropdown-item">Publish</a>
+                                        <a href="#" class="nav__dropdown-item">Program</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <a href="landing user.html" class="nav__link">
+                                <i class='bx bx-compass nav__icon' ></i>
+                                <span class="nav__name">Explore</span>
+                            </a>
+                            <a href="landing admin.html" class="nav__link">
+                                <i class='bx bx-bookmark nav__icon' ></i>
+                                <span class="nav__name">Saved</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="nav__link nav__logout">
+                    <i class='bx bx-log-out nav__icon' ></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <!--========== CONTENTS ==========-->
+        <main>
+
+            <div class="flex_box">
+
+                <div class="main_bar">
+                    <div class="content_box">
+                        <article class="article-card">
+                  
+                          <div class="img-box">
+                            <img src="./images/drawers.jpg" alt="" class="article-banner">
+                          </div>
+                      
+                      
+                          <div class="article-content">
+                      
+                            <a href="#">
+                              <h3 class="article-title">Shift the overall look and feel by adding these </h3>
+                            </a>
+                      
+                            <p class="article-text">Ever been in a room and felt like something was missing? Perhaps
+                              it felt slightle.</p>
+                      
+                            <div class="acticle-content-footer">
+                      
+                              <div class="author">
+                                <img src="./images/avatar-michelle.jpg" alt="" class="author-avater">
+                      
+                                <div class="author-info">
+                                  <a href="#">
+                                    <h4 class="author-name">Michelle Appleton</h4>
+                                  </a>
+                                  <div class="publish-date">28 Jun 2020</div>
+                                </div>
+                              </div>
+                      
+                      
+                              <div class="share">
+                      
+                                <button class="share-button">
+                                  <ion-icon name="arrow-redo"></ion-icon>
+                                </button>
+                      
+                                <div class="share-option">
+                                  <span>Share</span>
+                      
+                                  <a href="#">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                  </a>
+                                  <a href="#">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                  </a>
+                                  <a href="#">
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                  </a>
+                                </div>
+                      
+                              </div>
+                      
+                            </div>
+                      
+                          </div>
+                      
+                        </article>
+                        <article class="article-card">
+                  
+                            <div class="img-box">
+                              <img src="./images/drawers.jpg" alt="" class="article-banner">
+                            </div>
+                        
+                        
+                            <div class="article-content">
+                        
+                              <a href="#">
+                                <h3 class="article-title">Shift the overall look and feel by adding these </h3>
+                              </a>
+                        
+                              <p class="article-text">Ever been in a room and felt like something was missing? Perhaps
+                                it felt slightle.</p>
+                        
+                              <div class="acticle-content-footer">
+                        
+                                <div class="author">
+                                  <img src="./images/avatar-michelle.jpg" alt="" class="author-avater">
+                        
+                                  <div class="author-info">
+                                    <a href="#">
+                                      <h4 class="author-name">Michelle Appleton</h4>
+                                    </a>
+                                    <div class="publish-date">28 Jun 2020</div>
+                                  </div>
+                                </div>
+                        
+                        
+                                <div class="share">
+                        
+                                  <button class="share-button">
+                                    <ion-icon name="arrow-redo"></ion-icon>
+                                  </button>
+                        
+                                  <div class="share-option">
+                                    <span>Share</span>
+                        
+                                    <a href="#">
+                                      <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                      <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                      <ion-icon name="logo-pinterest"></ion-icon>
+                                    </a>
+                                  </div>
+                        
+                                </div>
+                        
+                              </div>
+                        
+                            </div>
+                        
+                          </article>
+                          <article class="article-card">
+                  
+                            <div class="img-box">
+                              <img src="./images/drawers.jpg" alt="" class="article-banner">
+                            </div>
+                        
+                        
+                            <div class="article-content">
+                        
+                              <a href="#">
+                                <h3 class="article-title">Shift the overall look and feel by adding these </h3>
+                              </a>
+                        
+                              <p class="article-text">Ever been in a room and felt like something was missing? Perhaps
+                                it felt slightle.</p>
+                        
+                              <div class="acticle-content-footer">
+                        
+                                <div class="author">
+                                  <img src="./images/avatar-michelle.jpg" alt="" class="author-avater">
+                        
+                                  <div class="author-info">
+                                    <a href="#">
+                                      <h4 class="author-name">Michelle Appleton</h4>
+                                    </a>
+                                    <div class="publish-date">28 Jun 2020</div>
+                                  </div>
+                                </div>
+                        
+                        
+                                <div class="share">
+                        
+                                  <button class="share-button">
+                                    <ion-icon name="arrow-redo"></ion-icon>
+                                  </button>
+                        
+                                  <div class="share-option">
+                                    <span>Share</span>
+                        
+                                    <a href="#">
+                                      <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                      <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                      <ion-icon name="logo-pinterest"></ion-icon>
+                                    </a>
+                                  </div>
+                        
+                                </div>
+                        
+                              </div>
+                        
+                            </div>
+                        
+                          </article>
+                          <article class="article-card">
+                  
+                            <div class="img-box">
+                              <img src="./images/drawers.jpg" alt="" class="article-banner">
+                            </div>
+                        
+                        
+                            <div class="article-content">
+                        
+                              <a href="#">
+                                <h3 class="article-title">Shift the overall look and feel by adding these </h3>
+                              </a>
+                        
+                              <p class="article-text">Ever been in a room and felt like something was missing? Perhaps
+                                it felt slightle.</p>
+                        
+                              <div class="acticle-content-footer">
+                        
+                                <div class="author">
+                                  <img src="./images/avatar-michelle.jpg" alt="" class="author-avater">
+                        
+                                  <div class="author-info">
+                                    <a href="#">
+                                      <h4 class="author-name">Michelle Appleton</h4>
+                                    </a>
+                                    <div class="publish-date">28 Jun 2020</div>
+                                  </div>
+                                </div>
+                        
+                        
+                                <div class="share">
+                        
+                                  <button class="share-button">
+                                    <ion-icon name="arrow-redo"></ion-icon>
+                                  </button>
+                        
+                                  <div class="share-option">
+                                    <span>Share</span>
+                        
+                                    <a href="#">
+                                      <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                      <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                      <ion-icon name="logo-pinterest"></ion-icon>
+                                    </a>
+                                  </div>
+                        
+                                </div>
+                        
+                              </div>
+                        
+                            </div>
+                        
+                          </article>
+                          <article class="article-card">
+                  
+                            <div class="img-box">
+                              <img src="./images/drawers.jpg" alt="" class="article-banner">
+                            </div>
+                        
+                        
+                            <div class="article-content">
+                        
+                              <a href="#">
+                                <h3 class="article-title">Shift the overall look and feel by adding these </h3>
+                              </a>
+                        
+                              <p class="article-text">Ever been in a room and felt like something was missing? Perhaps
+                                it felt slightle.</p>
+                        
+                              <div class="acticle-content-footer">
+                        
+                                <div class="author">
+                                  <img src="./images/avatar-michelle.jpg" alt="" class="author-avater">
+                        
+                                  <div class="author-info">
+                                    <a href="#">
+                                      <h4 class="author-name">Michelle Appleton</h4>
+                                    </a>
+                                    <div class="publish-date">28 Jun 2020</div>
+                                  </div>
+                                </div>
+                        
+                        
+                                <div class="share">
+                        
+                                  <button class="share-button">
+                                    <ion-icon name="arrow-redo"></ion-icon>
+                                  </button>
+                        
+                                  <div class="share-option">
+                                    <span>Share</span>
+                        
+                                    <a href="#">
+                                      <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                      <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                      <ion-icon name="logo-pinterest"></ion-icon>
+                                    </a>
+                                  </div>
+                        
+                                </div>
+                        
+                              </div>
+                        
+                            </div>
+                        
+                          </article>
+                        <article class="article-card">
+                  
+                            <div class="img-box">
+                              <img src="https://images.unsplash.com/photo-1517732306149-e8f829eb588a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80" alt="" class="article-banner">
+                            </div>
+                        
+                        
+                            <div class="article-content">
+                        
+                              <a href="#">
+                                <h3 class="article-title">Shift the overall look and feel by adding these </h3>
+                              </a>
+                        
+                              <p class="article-text">Ever been in a room and felt like something was missing? Perhaps
+                                it felt slightle.</p>
+                        
+                              <div class="acticle-content-footer">
+                        
+                                <div class="author">
+                                  <img src="./images/avatar-michelle.jpg" alt="" class="author-avater">
+                        
+                                  <div class="author-info">
+                                    <a href="#">
+                                      <h4 class="author-name">Michelle Appleton</h4>
+                                    </a>
+                                    <div class="publish-date">28 Jun 2020</div>
+                                  </div>
+                                </div>
+                        
+                        
+                                <div class="share">
+                        
+                                  <button class="share-button">
+                                    <ion-icon name="arrow-redo"></ion-icon>
+                                  </button>
+                        
+                                  <div class="share-option">
+                                    <span>Share</span>
+                        
+                                    <a href="#">
+                                      <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                      <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                      <ion-icon name="logo-pinterest"></ion-icon>
+                                    </a>
+                                  </div>
+                        
+                                </div>
+                        
+                              </div>
+                        
+                            </div>
+                        
+                          </article>
+        
+                          <article class="article-card">
+                  
+                            <div class="img-box">
+                              <img src="https://images.unsplash.com/photo-1486663845017-3eedaa78617f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="article-banner">
+                            </div>
+                        
+                        
+                            <div class="article-content">
+                        
+                              <a href="#">
+                                <h3 class="article-title">Shift the overall look and feel by adding these </h3>
+                              </a>
+                        
+                              <p class="article-text">Ever been in a room and felt like something was missing? Perhaps
+                                it felt slightle.</p>
+                        
+                              <div class="acticle-content-footer">
+                        
+                                <div class="author">
+                                  <img src="./images/avatar-michelle.jpg" alt="" class="author-avater">
+                        
+                                  <div class="author-info">
+                                    <a href="#">
+                                      <h4 class="author-name">Michelle Appleton</h4>
+                                    </a>
+                                    <div class="publish-date">28 Jun 2020</div>
+                                  </div>
+                                </div>
+                        
+                        
+                                <div class="share">
+                        
+                                  <button class="share-button">
+                                    <ion-icon name="arrow-redo"></ion-icon>
+                                  </button>
+                        
+                                  <div class="share-option">
+                                    <span>Share</span>
+                        
+                                    <a href="#">
+                                      <ion-icon name="logo-facebook"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                      <ion-icon name="logo-twitter"></ion-icon>
+                                    </a>
+                                    <a href="#">
+                                      <ion-icon name="logo-pinterest"></ion-icon>
+                                    </a>
+                                  </div>
+                        
+                                </div>
+                        
+                              </div>
+                        
+                            </div>
+                        
+                          </article>
+                      </div>
+                </div>
+
+
+                <div class="side_bar">
+                       whwhwhwh
+                </div>
+            </div>
+
+
+        </main>
+        <script>
+
+            const shareOption = document.querySelector('.share-option');
+        
+            document.querySelector('.share-button').addEventListener('click', function () {
+              this.classList.toggle('active');
+              shareOption.classList.toggle('active');
+            });
+        
+          </script>
+        <!--========== MAIN JS ==========-->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
